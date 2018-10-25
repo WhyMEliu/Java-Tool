@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="SFTPdemo"
+  id="myeclipse.1450227039652"
+  context-root="/SFTPdemo"
+  j2ee-spec="5.0"
+  archive="SFTPdemo.war">
+  <attributes>
+    <attribute name="webrootdir" value="WebRoot" />
+  </attributes>
+</project-module>
+
