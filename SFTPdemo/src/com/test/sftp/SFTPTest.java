@@ -38,7 +38,7 @@ public class SFTPTest {
         byte[] buff = new byte[1024 * 256]; // 设定每次传输的数据块大小为256KB
         int read;
         if (out != null) {
-            System.out.println("Start to read input stream");
+            System.out.println("Start to read input stream ");
             InputStream is = new FileInputStream(src);
             do {
                 read = is.read(buff, 0, buff.length);
