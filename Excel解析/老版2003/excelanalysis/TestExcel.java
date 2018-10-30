@@ -1,11 +1,3 @@
-/******************************************************************
- * TestExcel.java
- * Copyright 2018 by GNNT Company. All Rights Reserved.
- * CreateDate£º2018Äê10ÔÂ30ÈÕ
- * Author£ºLiupeng
- * Version£ºF1.0.0.0
- ******************************************************************/
-
 package excelanalysis;
 
 import java.io.File;
