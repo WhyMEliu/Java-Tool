@@ -53,9 +53,11 @@ public class NewExcelUtils {
 
 	      this.workbook = new XSSFWorkbook(inputStream);
 	    } catch (FileNotFoundException e) {
-	    	System.out.println("文件不存在");
+	    	//文件不存在
+	    	e.printStackTrace();
 	    } catch (IOException e) {
-	    	System.out.println("读取文件失败");
+	    	//读取文件失败
+	    	e.printStackTrace();
 	    } finally {
 	      if (inputStream != null)
 	        try {
@@ -73,7 +75,8 @@ public class NewExcelUtils {
 	    {
 	      this.workbook = new XSSFWorkbook(inputStream);
 	    } catch (IOException e) {
-	      System.out.println("读取文件失败");
+	    	//读取文件失败
+	    	e.printStackTrace();
 	    }
 	  }
 
