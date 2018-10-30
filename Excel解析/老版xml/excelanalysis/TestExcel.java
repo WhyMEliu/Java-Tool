@@ -29,7 +29,7 @@ import java.util.Map;
 public class TestExcel {
 	public static void main(String[] args) {
 		//excel 文件流
-		File file= new File("");
+		File file= new File("C:\\Users\\jw\\Desktop\\ttli\\jiex.xls");
 		try {
 			//别名
 			String[] t = new String[]{"commodityId","status"};
@@ -40,10 +40,11 @@ public class TestExcel {
 	    		StringBuffer msg=new StringBuffer(i+2+"行");
 	        	String commodityId = l.get(i).get("commodityId").toString();
 	        	String status = l.get(i).get("status").toString();
+	        	System.out.println("commodityId==="+commodityId);
+	        	System.out.println("status==="+status);
 			}
 		}catch(Exception e){
 				e.printStackTrace();
 		}
-		
 	}
 }
