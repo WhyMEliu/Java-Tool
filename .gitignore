@@ -1,0 +1,13 @@
+Socket-Demo/.settings
+Socket-Demo/build
+Socket-Demo/WebRoot
+Socket-Demo/.classpath
+Socket-Demo/.project
+
+SFTP-Demo/.settings
+SFTP-Demo/WebRoot/META-INF
+SFTP-Demo/WebRoot/WEB-INF/classes
+SFTP-Demo/WebRoot/index.jsp
+SFTP-Demo/.mymetadata
+SFTP-Demo/.classpath
+SFTP-Demo/.project
