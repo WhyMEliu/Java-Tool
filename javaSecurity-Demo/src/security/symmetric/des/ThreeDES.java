@@ -25,12 +25,12 @@ import org.apache.commons.codec.binary.Hex;
  * </p>
  */
 public class ThreeDES {
-	private static String src ="Hello World~";
-	
+	private static String src = "Hello World~";
+
 	public static void main(String[] args) {
 		jdk3DES();
 	}
-	
+
 	public static void jdk3DES() {
 		try {
 			//生成KEY(密钥位数是8的倍数,112 ~ 168之间)
@@ -38,23 +38,23 @@ public class ThreeDES {
 			keyGenerator.init(112);
 			SecretKey secretKey = keyGenerator.generateKey();
 			byte[] bytesKey = secretKey.getEncoded();
-			
+
 			//KEY转换
 			DESedeKeySpec desKeySpec = new DESedeKeySpec(bytesKey);
 			SecretKeyFactory factory = SecretKeyFactory.getInstance("DESede");
 			Key convertSecretKey = factory.generateSecret(desKeySpec);
-			
+
 			//加密
 			Cipher cipher = Cipher.getInstance("DESede/ECB/PKCS5Padding");
 			cipher.init(Cipher.ENCRYPT_MODE, convertSecretKey);
 			byte[] result = cipher.doFinal(src.getBytes());
 			System.out.println("jdk 3des encrypt:" + Hex.encodeHexString(result));
-			
+
 			//解密
 			cipher.init(Cipher.DECRYPT_MODE, convertSecretKey);
 			result = cipher.doFinal(result);
 			System.out.println("jdk 3des decrypt:" + new String(result));
-		}catch (Exception e) {
+		} catch (Exception e) {
 			e.printStackTrace();
 		}
 	}

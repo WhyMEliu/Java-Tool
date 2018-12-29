@@ -88,7 +88,7 @@ public class AES {
 			cipher.init(Cipher.DECRYPT_MODE, key, iv);
 			byte[] result = cipher.doFinal(encryptBytes);
 			System.out.println("jdk aes(CBC) desrypt:" + new String(result));
-			
+
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
