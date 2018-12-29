@@ -24,7 +24,7 @@ import org.apache.commons.codec.binary.Hex;
  * 
  * </p>
  */
-public class Des {
+public class DES {
 	
 	private static String src ="Hello World~";
 	
